@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lattice-lab"
+version = "1.0.0"
+description = "Exact lattice basis reduction (LLL, BKZ, SVP, CVP, HNF, SNF) and integer relation finding in pure Python"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+lattice-lab = "lattice_lab.__main__:main"
+
+[tool.setuptools]
+packages = ["lattice_lab"]
